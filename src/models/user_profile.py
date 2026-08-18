@@ -54,6 +54,7 @@ class UserProfile:
     weight_kg: float
     education_level: EducationLevel
     systolic_bp: int
+    physically_active: bool
     smoking_status: Smoking = Smoking.NON_SMOKER
     diabetes_status: Diabetes = Diabetes.NOT_DIABETIC
     history_of_cvd: bool = False
@@ -74,7 +75,6 @@ class UserProfile:
     antipsychotic_meds: bool = False
     pcos: bool = False
     gestational_diabetes: bool = False
-    physically_active: bool
 
     @property
     def bmi(self) -> float:
