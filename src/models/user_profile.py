@@ -47,6 +47,7 @@ class UserProfile:
     sex: Sex
     ethnicity: Ethnicity
     cholesterol_hdl_ratio: float
+    total_cholesterol: float
     fasting_blood_glucose: float
     hba1c: float
     height_cm: float
@@ -73,6 +74,7 @@ class UserProfile:
     antipsychotic_meds: bool = False
     pcos: bool = False
     gestational_diabetes: bool = False
+    physically_active: bool
 
     @property
     def bmi(self) -> float:
